@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Electrolize&display=swap");
+:root {
+  font-family: "https://fonts.googleapis.com/css2?family=Crimson+Text&family=Electrolize&display=swap";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.heading {
+  color: goldenrod;
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+
+.container {
+  background-color: white;
+  width: 60vw;
+  height: 80vh;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.greet {
+  align-self: flex-start;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.greet input {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.double {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.form-durum {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-harcama,
+.form-fiyat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+input {
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.ekle-btn {
+  background-color: goldenrod;
+  padding: 10px 40px;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.toplam {
+  background-color: lightblue;
+  font-size: 21px;
+  display: flex;
+  padding: 15px 50px;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.toplam span {
+  color: rgb(255, 0, 0);
+}
+
+.liste {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  overflow: scroll;
+}
+.harcama {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+  color: goldenrod;
+  padding: 5px 15px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons img {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.buttons img:nth-child(2) {
+  width: 35px;
+  height: 35px;
+}
+.harcama h2:nth-child(2) {
+  color: red;
+}
+
+.payed {
+  opacity: 0.7;
+}
+
+.payed h2:nth-child(1) {
+  text-decoration: line-through;
+}
+
+.payed h2:nth-child(2) {
+  color: green;
+}
